@@ -21,7 +21,7 @@ $result = $conn->query($sql);
     <title>Dashboard</title>
     <style>
         /* Reset CSS */
-        * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -45,7 +45,7 @@ $result = $conn->query($sql);
 
         /* Header styles */
         header {
-            background: #50b3a2;
+            background: #3498db; /* Mengubah warna menjadi biru */
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -55,6 +55,7 @@ $result = $conn->query($sql);
             margin: 0;
             font-size: 2.5rem;
             text-transform: uppercase;
+            text-align: center; /* Menyelaraskan teks ke tengah */
         }
 
         header nav {
@@ -95,6 +96,7 @@ $result = $conn->query($sql);
         .dashboard h1 {
             font-size: 2rem;
             margin-bottom: 20px;
+            text-align: center; /* Menyelaraskan teks ke tengah */
         }
 
         /* Table styles */
@@ -111,7 +113,7 @@ $result = $conn->query($sql);
         }
 
         table th {
-            background-color: #50b3a2;
+            background-color: #3498db; /* Mengubah warna menjadi biru */
             color: #fff;
             text-transform: uppercase;
         }
@@ -137,7 +139,7 @@ $result = $conn->query($sql);
             padding: 8px 16px;
             font-size: 1rem;
             color: #fff;
-            background-color: #50b3a2;
+            background-color: #3498db; /* Mengubah warna menjadi biru */
             border: none;
             cursor: pointer;
             border-radius: 4px;
@@ -146,7 +148,7 @@ $result = $conn->query($sql);
         }
 
         .button:hover {
-            background-color: #45a089;
+            background-color: #2980b9;
         }
 
         /* Footer styles */
@@ -190,7 +192,7 @@ $result = $conn->query($sql);
             <h1>Dashboard</h1>
             <nav>
                 <ul>
-                    <li><a href="dashboard.php">Home</a></li>
+                    <li><a href="dashboard.php">Admin Database</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </nav>
@@ -198,7 +200,7 @@ $result = $conn->query($sql);
     </header>
 
     <div class="container dashboard">
-        <h1>Image Database</h1>
+        <h1>Tabel Pengunjung</h1>
         <table>
             <thead>
                 <tr>
