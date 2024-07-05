@@ -1,5 +1,5 @@
 <?php
-$servername = "192.168.100.84";
+$servername = "192.168.100.87";
 $username = "root";
 $password = "root123";
 $dbname = "esp32cam";
