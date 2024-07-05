@@ -13,9 +13,10 @@ $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, 
 $stmt->bind_param("sss", $name, $email, $password_hashed);
 
 if ($stmt->execute() === TRUE) {
-    echo "Registration successful. <a href='index.html'>Login here</a>";
+    echo "<script>alert('Registration successful.'); window.location.href='index.html';</script>";
 } else {
-    echo "Error: " . $stmt->error;
+    $error_message = $stmt->error;
+    echo "<script>alert('Error: $error_message'); window.location.href='register.html';</script>";
 }
 
 $stmt->close();
