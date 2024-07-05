@@ -19,10 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header("Location: dashboard.php");
             exit();
         } else {
-            echo "Invalid password. <a href='index.html'>Try again</a>";
+            echo "<script>alert('Invalid password.'); window.location.href='index.html';</script>";
         }
     } else {
-        echo "No user found with this email. <a href='register.html'>Register here</a>";
+        echo "<script>alert('No user found with this email.'); window.location.href='register.html';</script>";
     }
 }
 $conn->close();
