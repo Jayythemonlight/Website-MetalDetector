@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  background-image: linear-gradient(to right, #005aa7, #fffde4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +12,7 @@ body {
 .form-container {
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
