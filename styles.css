@@ -7,6 +7,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f4f4;
+  background-image: linear-gradient(to right, #005aa7, #fffde4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +18,7 @@ body {
 .container {
   background-color: #fff;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
